@@ -114,14 +114,13 @@ function rainbowBg() {
     document.documentElement.style.setProperty('--bg', 'linear-gradient(135deg,rgb(1, 255, 234),rgb(255, 251, 14),rgb(0, 238, 255))');
 }
 
-var audio = new Audio(audioLink);
-var audioLink = 'https://npm.elemecdn.com/kita-chan@1.0.1/muyu.mp3';
+
 function play() {
-    if(muyuType == 0) {
-        audioLink = 'https://npm.elemecdn.com/kita-chan@1.0.1/muyu.mp3';
+    if (muyuType == 0) {
+        var audio = document.getElementById("https://npm.elemecdn.com/kita-chan@1.0.1/muyu.mp3");
+        audio.play();
     } else {
-        audioLink = 'https://npm.elemecdn.com/kita-chan@1.0.1/kita.mp3';
+        var audio = document.getElementById("https://npm.elemecdn.com/kita-chan@1.0.1/kita.mp3");
+        audio.play();
     }
-    audio.currentTime = 0;
-    audio.play();
 }
