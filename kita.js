@@ -26,7 +26,7 @@ const gitalk = new Gitalk({
     owner: 'Hicircum',
     admin: ['Hicircum'],
     id: '1',      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false,  // Facebook-like distraction free mode
+    distractionFreeMode: true,  // Facebook-like distraction free mode
     title: 'Comments'
   })
   
