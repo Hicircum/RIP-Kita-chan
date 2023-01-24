@@ -79,7 +79,7 @@ function change() {
 }
 
 function add() {
-    play();
+    playSound();
     count++;
     if (count == 421) {
         rainbowBg();
@@ -115,7 +115,7 @@ function rainbowBg() {
 }
 
 
-function play() {
+function playSound() {
     if (muyuType == 0) {
         var audio = document.getElementById("https://npm.elemecdn.com/kita-chan@1.0.1/muyu.mp3");
         audio.play();
