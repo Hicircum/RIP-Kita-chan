@@ -117,10 +117,10 @@ function rainbowBg() {
 
 function playSound() {
     if (muyuType == 0) {
-        var audio = document.getElementById("https://npm.elemecdn.com/kita-chan@1.0.1/muyu.mp3");
+        var audio = new Audio("https://npm.elemecdn.com/kita-chan@1.0.1/muyu.mp3");
         audio.play();
     } else {
-        var audio = document.getElementById("https://npm.elemecdn.com/kita-chan@1.0.1/kita.mp3");
+        var audio = new Audio("https://npm.elemecdn.com/kita-chan@1.0.1/kita.mp3");
         audio.play();
     }
 }
