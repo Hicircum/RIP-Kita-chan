@@ -15,7 +15,7 @@ const gitalk = new Gitalk({
     repo: 'RIP-Kita-chan',      // The repository of store comments,
     owner: 'Hicircum',
     admin: ['Hicircum'],
-    id: 1,      // Ensure uniqueness and length less than 50
+    id: '1',      // Ensure uniqueness and length less than 50
     distractionFreeMode: false,  // Facebook-like distraction free mode
     title: 'Comments'
   })
