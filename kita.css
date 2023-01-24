@@ -1,0 +1,95 @@
+:root{
+    --bg:black;
+}
+.kitakita{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.mold{
+    margin: 10px;
+}
+.tab-pane{
+    overflow: hidden;
+}
+.kita{
+    width: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+.figure{
+    position: relative;
+}
+.back{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 50px;
+    border-radius: 10px;
+    z-index: -1;
+    background: var(--bg);
+    animation: color 2s linear infinite;
+
+}
+@keyframes color{
+    to{
+      filter: hue-rotate(360deg);
+    }
+}
+.kitarip{
+    margin-top: 20px;
+    text-align: center;
+}
+.box{
+    margin: 100px auto;
+    height: 190px;
+    width: 250px;
+    position: relative;
+    text-align: center;
+}
+#count{
+    padding: 20px;
+    font-size: 20px;
+}
+.muyu{
+    width: 250px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    user-select: none;
+}
+.text{
+    user-select: none;
+    position: absolute;
+    font-size: 40px;
+    z-index: -1;
+    color: aliceblue;
+    left: 120px;
+}
+@keyframes text-animation {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+}
+@keyframes muyu {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+.box:active .text {
+    animation-name: text-animation;
+    animation-fill-mode: forwards;
+    animation-duration: 0.2s;
+}
+.box:active .muyu {
+    animation-name: muyu;
+    animation-duration: 0.1s;
+}

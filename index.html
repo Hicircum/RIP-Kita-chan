@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-cn" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIP Kita Chan</title>
+    <link href="https://npm.elemecdn.com/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://npm.elemecdn.com/aplayer@1.10.1/dist/APlayer.min.css">
+    <link rel="stylesheet" href="https://npm.elemecdn.com/gitalk/dist/gitalk.css">
+    <link rel="stylesheet" href="./kita.css">
+</head>
+<body>
+    <div class="container">
+        <div class="kitarip">
+            <figure class="figure">
+                <img id="kita" src="https://bj.bcebos.com/baidu-rmb-video-cover-1/8ed552f2b1346afe264a4b2dcdb32faf.png" class="img-fluid kita figure-img" alt="kita">
+                <div class="back"></div>
+                <figcaption class="figure-caption">
+                    喜多郁代<br>生日：4月21日
+                </figcaption>
+            </figure>
+            
+        </div>
+    </div>
+    <div class="container">
+        <div class="kitakita">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-muyu-tab" data-bs-toggle="tab" data-bs-target="#nav-muyu" type="button" role="tab" aria-controls="nav-muyu" aria-selected="true">电子木鱼</button>
+                    <button class="nav-link" id="nav-music-tab" data-bs-toggle="tab" data-bs-target="#nav-music" type="button" role="tab" aria-controls="nav-music" aria-selected="false">BGM</button>
+                    <button class="nav-link" id="nav-comment-tab" data-bs-toggle="tab" data-bs-target="#nav-comment" type="button" role="tab" aria-controls="nav-comment" aria-selected="false">留言</button>
+                    <a class="nav-link" href="https://github.com/Hicircum/RIP-Kita-chan">GitHub</a>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active position-relative" id="nav-muyu" role="tabpanel" aria-labelledby="nav-muyu-tab" tabindex="0">
+                    <button type="button" id="muyuType" class="btn btn-primary position-absolute top-0 start-0 mold" onclick="change()">传统木鱼</button>
+                    <span id="count" class="position-absolute top-0 end-0">0</span>
+                    <div class="box" onclick="add()">
+                        <p class="text">+1</p>
+                        <img class="muyu" src="https://bj.bcebos.com/baidu-rmb-video-cover-1/9acbd7988ffeef3c15cf24cc8dfe45b9.png" alt="">
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-music" role="tabpanel" aria-labelledby="nav-music-tab" tabindex="0">
+                    <div id="aplayer"></div>
+                </div>
+                <div class="tab-pane fade" id="nav-comment" role="tabpanel" aria-labelledby="nav-commen-tab" tabindex="0">
+                    <div id="gitalk-container"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://npm.elemecdn.com/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://npm.elemecdn.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    <script src="https://npm.elemecdn.com/gitalk/dist/gitalk.min.js"></script>
+    <script src="./kita.js"></script>
+</body>
+</html>
